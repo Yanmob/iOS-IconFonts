@@ -1,0 +1,605 @@
+//
+//  NSString+BPIconFonts.m
+//  IconFonts
+//
+//  Created by Luca on 6/12/13.
+//  Copyright (c) 2013 BendingSpoons. All rights reserved.
+//
+
+#import "NSString+BPIconFonts.h"
+
+@implementation NSString (BPIconFonts)
+
++ (NSArray*)fontAwesomeIcons
+{
+    static NSArray *fontAwesomeIcons;
+    if (nil == fontAwesomeIcons) {
+        fontAwesomeIcons = @[
+                             @"", //BPIconFontsAwesomeGlass
+                             @"", //BPIconFontsAwesomeMusic
+                             @"", //BPIconFontsAwesomeSearch
+                             @"", //BPIconFontsAwesomeEnvelope
+                             @"", //BPIconFontsAwesomeHeart
+                             @"", //BPIconFontsAwesomeStar
+                             @"", //BPIconFontsAwesomeStarEmpty
+                             @"", //BPIconFontsAwesomeUser
+                             @"", //BPIconFontsAwesomeFilm
+                             @"", //BPIconFontsAwesomeThLarge
+                             @"", //BPIconFontsAwesomeTh
+                             @"", //BPIconFontsAwesomeThList
+                             @"", //BPIconFontsAwesomeOk
+                             @"", //BPIconFontsAwesomeRemove
+                             @"", //BPIconFontsAwesomeZoomIn
+                             @"", //BPIconFontsAwesomeZoomOut
+                             @"", //BPIconFontsAwesomeOff
+                             @"", //BPIconFontsAwesomeSignal
+                             @"", //BPIconFontsAwesomeCog
+                             @"", //BPIconFontsAwesomeTrash
+                             @"", //BPIconFontsAwesomeHome
+                             @"", //BPIconFontsAwesomeFile
+                             @"", //BPIconFontsAwesomeTime
+                             @"", //BPIconFontsAwesomeRoad
+                             @"", //BPIconFontsAwesomeDownloadAlt
+                             @"", //BPIconFontsAwesomeDownload
+                             @"", //BPIconFontsAwesomeUpload
+                             @"", //BPIconFontsAwesomeInbox
+                             @"", //BPIconFontsAwesomePlayCircle
+                             @"", //BPIconFontsAwesomeRepeat
+                             @"", //BPIconFontsAwesomeRefresh
+                             @"", //BPIconFontsAwesomeListAlt
+                             @"", //BPIconFontsAwesomeLock
+                             @"", //BPIconFontsAwesomeFlag
+                             @"", //BPIconFontsAwesomeHeadphones
+                             @"", //BPIconFontsAwesomeVolumeOff
+                             @"", //BPIconFontsAwesomeVolumeDown
+                             @"", //BPIconFontsAwesomeVolumeUp
+                             @"", //BPIconFontsAwesomeQrcode
+                             @"", //BPIconFontsAwesomeBarcode
+                             @"", //BPIconFontsAwesomeTag
+                             @"", //BPIconFontsAwesomeTags
+                             @"", //BPIconFontsAwesomeBook
+                             @"", //BPIconFontsAwesomeBookmark
+                             @"", //BPIconFontsAwesomePrint
+                             @"", //BPIconFontsAwesomeCamera
+                             @"", //BPIconFontsAwesomeFont
+                             @"", //BPIconFontsAwesomeBold
+                             @"", //BPIconFontsAwesomeItalic
+                             @"", //BPIconFontsAwesomeTextHeight
+                             @"", //BPIconFontsAwesomeTextWidth
+                             @"", //BPIconFontsAwesomeAlignLeft
+                             @"", //BPIconFontsAwesomeAlignCenter
+                             @"", //BPIconFontsAwesomeAlignRight
+                             @"", //BPIconFontsAwesomeAlignJustify
+                             @"", //BPIconFontsAwesomeList
+                             @"", //BPIconFontsAwesomeIndentLeft
+                             @"", //BPIconFontsAwesomeIndentRight
+                             @"", //BPIconFontsAwesomeFacetimeVideo
+                             @"", //BPIconFontsAwesomePicture
+                             @"", //BPIconFontsAwesomePencil
+                             @"", //BPIconFontsAwesomeMapMarker
+                             @"", //BPIconFontsAwesomeAdjust
+                             @"", //BPIconFontsAwesomeTint
+                             @"", //BPIconFontsAwesomeEdit
+                             @"", //BPIconFontsAwesomeShare
+                             @"", //BPIconFontsAwesomeCheck
+                             @"", //BPIconFontsAwesomeMove
+                             @"", //BPIconFontsAwesomeStepBackward
+                             @"", //BPIconFontsAwesomeFastBackward
+                             @"", //BPIconFontsAwesomeBackward
+                             @"", //BPIconFontsAwesomePlay
+                             @"", //BPIconFontsAwesomePause
+                             @"", //BPIconFontsAwesomeStop
+                             @"", //BPIconFontsAwesomeForward
+                             @"", //BPIconFontsAwesomeFastForward
+                             @"", //BPIconFontsAwesomeStepForward
+                             @"", //BPIconFontsAwesomeEject
+                             @"", //BPIconFontsAwesomeChevronLeft
+                             @"", //BPIconFontsAwesomeChevronRight
+                             @"", //BPIconFontsAwesomePlusSign
+                             @"", //BPIconFontsAwesomeMinusSign
+                             @"", //BPIconFontsAwesomeRemoveSign
+                             @"", //BPIconFontsAwesomeOkSign
+                             @"", //BPIconFontsAwesomeQuestionSign
+                             @"", //BPIconFontsAwesomeInfoSign
+                             @"", //BPIconFontsAwesomeScreenshot
+                             @"", //BPIconFontsAwesomeRemoveCircle
+                             @"", //BPIconFontsAwesomeOkCircle
+                             @"", //BPIconFontsAwesomeBanCircle
+                             @"", //BPIconFontsAwesomeArrowLeft
+                             @"", //BPIconFontsAwesomeArrowRight
+                             @"", //BPIconFontsAwesomeArrowUp
+                             @"", //BPIconFontsAwesomeArrowDown
+                             @"", //BPIconFontsAwesomeShareAlt
+                             @"", //BPIconFontsAwesomeResizeFull
+                             @"", //BPIconFontsAwesomeResizeSmall
+                             @"", //BPIconFontsAwesomePlus
+                             @"", //BPIconFontsAwesomeMinus
+                             @"", //BPIconFontsAwesomeAsterisk
+                             @"", //BPIconFontsAwesomeExclamationSign
+                             @"", //BPIconFontsAwesomeGift
+                             @"", //BPIconFontsAwesomeLeaf
+                             @"", //BPIconFontsAwesomeFire
+                             @"", //BPIconFontsAwesomeEyeOpen
+                             @"", //BPIconFontsAwesomeEyeClose
+                             @"", //BPIconFontsAwesomeWarningSign
+                             @"", //BPIconFontsAwesomePlane
+                             @"", //BPIconFontsAwesomeCalendar
+                             @"", //BPIconFontsAwesomeRandom
+                             @"", //BPIconFontsAwesomeComment
+                             @"", //BPIconFontsAwesomeMagnet
+                             @"", //BPIconFontsAwesomeChevronUp
+                             @"", //BPIconFontsAwesomeChevronDown
+                             @"", //BPIconFontsAwesomeRetweet
+                             @"", //BPIconFontsAwesomeShoppingCart
+                             @"", //BPIconFontsAwesomeFolderClose
+                             @"", //BPIconFontsAwesomeFolderOpen
+                             @"", //BPIconFontsAwesomeResizeVertical
+                             @"", //BPIconFontsAwesomeResizeHorizontal
+                             @"", //BPIconFontsAwesomeBarChart
+                             @"", //BPIconFontsAwesomeTwitterSign
+                             @"", //BPIconFontsAwesomeFacebookSign
+                             @"", //BPIconFontsAwesomeCameraRetro
+                             @"", //BPIconFontsAwesomeKey
+                             @"", //BPIconFontsAwesomeCogs
+                             @"", //BPIconFontsAwesomeComments
+                             @"", //BPIconFontsAwesomeThumbsUp
+                             @"", //BPIconFontsAwesomeThumbsDown
+                             @"", //BPIconFontsAwesomeStarHalf
+                             @"", //BPIconFontsAwesomeHeartEmpty
+                             @"", //BPIconFontsAwesomeSignout
+                             @"", //BPIconFontsAwesomeLinkedinSign
+                             @"", //BPIconFontsAwesomePushpin
+                             @"", //BPIconFontsAwesomeExternalLink
+                             @"", //BPIconFontsAwesomeSignin
+                             @"", //BPIconFontsAwesomeTrophy
+                             @"", //BPIconFontsAwesomeGithubSign
+                             @"", //BPIconFontsAwesomeUploadAlt
+                             @"", //BPIconFontsAwesomeLemon
+                             @"", //BPIconFontsAwesomePhone
+                             @"", //BPIconFontsAwesomeCheckEmpty
+                             @"", //BPIconFontsAwesomeBookmarkEmpty
+                             @"", //BPIconFontsAwesomePhoneSign
+                             @"", //BPIconFontsAwesomeTwitter
+                             @"", //BPIconFontsAwesomeFacebook
+                             @"", //BPIconFontsAwesomeGithub
+                             @"", //BPIconFontsAwesomeUnlock
+                             @"", //BPIconFontsAwesomeCreditCard
+                             @"", //BPIconFontsAwesomeRss
+                             @"", //BPIconFontsAwesomeHdd
+                             @"", //BPIconFontsAwesomeBullhorn
+                             @"", //BPIconFontsAwesomeBell
+                             @"", //BPIconFontsAwesomeCertificate
+                             @"", //BPIconFontsAwesomeHandRight
+                             @"", //BPIconFontsAwesomeHandLeft
+                             @"", //BPIconFontsAwesomeHandUp
+                             @"", //BPIconFontsAwesomeHandDown
+                             @"", //BPIconFontsAwesomeCircleArrowLeft
+                             @"", //BPIconFontsAwesomeCircleArrowRight
+                             @"", //BPIconFontsAwesomeCircleArrowUp
+                             @"", //BPIconFontsAwesomeCircleArrowDown
+                             @"", //BPIconFontsAwesomeGlobe
+                             @"", //BPIconFontsAwesomeWrench
+                             @"", //BPIconFontsAwesomeTasks
+                             @"", //BPIconFontsAwesomeFilter
+                             @"", //BPIconFontsAwesomeBriefcase
+                             @"", //BPIconFontsAwesomeFullscreen
+                             @"", //BPIconFontsAwesomeGroup
+                             @"", //BPIconFontsAwesomeLink
+                             @"", //BPIconFontsAwesomeCloud
+                             @"", //BPIconFontsAwesomeBeaker
+                             @"", //BPIconFontsAwesomeCut
+                             @"", //BPIconFontsAwesomeCopy
+                             @"", //BPIconFontsAwesomePaperClip
+                             @"", //BPIconFontsAwesomeSave
+                             @"", //BPIconFontsAwesomeSignBlank
+                             @"", //BPIconFontsAwesomeReorder
+                             @"", //BPIconFontsAwesomeListUl
+                             @"", //BPIconFontsAwesomeListOl
+                             @"", //BPIconFontsAwesomeStrikethrough
+                             @"", //BPIconFontsAwesomeUnderline
+                             @"", //BPIconFontsAwesomeTable
+                             @"", //BPIconFontsAwesomeMagic
+                             @"", //BPIconFontsAwesomeTruck
+                             @"", //BPIconFontsAwesomePinterest
+                             @"", //BPIconFontsAwesomePinterestSign
+                             @"", //BPIconFontsAwesomeGooglePlusSign
+                             @"", //BPIconFontsAwesomeGooglePlus
+                             @"", //BPIconFontsAwesomeMoney
+                             @"", //BPIconFontsAwesomeCaretDown
+                             @"", //BPIconFontsAwesomeCaretUp
+                             @"", //BPIconFontsAwesomeCaretLeft
+                             @"", //BPIconFontsAwesomeCaretRight
+                             @"", //BPIconFontsAwesomeColumns
+                             @"", //BPIconFontsAwesomeSort
+                             @"", //BPIconFontsAwesomeSortDown
+                             @"", //BPIconFontsAwesomeSortUp
+                             @"", //BPIconFontsAwesomeEnvelopeAlt
+                             @"", //BPIconFontsAwesomeLinkedin
+                             @"", //BPIconFontsAwesomeUndo
+                             @"", //BPIconFontsAwesomeLegal
+                             @"", //BPIconFontsAwesomeDashboard
+                             @"", //BPIconFontsAwesomeCommentAlt
+                             @"", //BPIconFontsAwesomeCommentsAlt
+                             @"", //BPIconFontsAwesomeBolt
+                             @"", //BPIconFontsAwesomeSitemap
+                             @"", //BPIconFontsAwesomeUmbrella
+                             @"", //BPIconFontsAwesomePaste
+                             @"", //BPIconFontsAwesomeLightbulb
+                             @"", //BPIconFontsAwesomeExchange
+                             @"", //BPIconFontsAwesomeCloudDownload
+                             @"", //BPIconFontsAwesomeCloudUpload
+                             @"", //BPIconFontsAwesomeUserMd
+                             @"", //BPIconFontsAwesomeStethoscope
+                             @"", //BPIconFontsAwesomeSuitcase
+                             @"", //BPIconFontsAwesomeBellAlt
+                             @"", //BPIconFontsAwesomeCoffee
+                             @"", //BPIconFontsAwesomeFood
+                             @"", //BPIconFontsAwesomeFileAlt
+                             @"", //BPIconFontsAwesomeBuilding
+                             @"", //BPIconFontsAwesomeHospital
+                             @"", //BPIconFontsAwesomeAmbulance
+                             @"", //BPIconFontsAwesomeMedkit
+                             @"", //BPIconFontsAwesomeFighterJet
+                             @"", //BPIconFontsAwesomeBeer
+                             @"", //BPIconFontsAwesomeHSign
+                             @"", //BPIconFontsAwesomePlusSignAlt
+                             @"", //BPIconFontsAwesomeDoubleAngleLeft
+                             @"", //BPIconFontsAwesomeDoubleAngleRight
+                             @"", //BPIconFontsAwesomeDoubleAngleUp
+                             @"", //BPIconFontsAwesomeDoubleAngleDown
+                             @"", //BPIconFontsAwesomeAngleLeft
+                             @"", //BPIconFontsAwesomeAngleRight
+                             @"", //BPIconFontsAwesomeAngleUp
+                             @"", //BPIconFontsAwesomeAngleDown
+                             @"", //BPIconFontsAwesomeDesktop
+                             @"", //BPIconFontsAwesomeLaptop
+                             @"", //BPIconFontsAwesomeTablet
+                             @"", //BPIconFontsAwesomeMobilePhone
+                             @"", //BPIconFontsAwesomeCircleBlank
+                             @"", //BPIconFontsAwesomeQuoteLeft
+                             @"", //BPIconFontsAwesomeQuoteRight
+                             @"", //BPIconFontsAwesomeSpinner
+                             @"", //BPIconFontsAwesomeCircle
+                             @"", //BPIconFontsAwesomeReply
+                             @"", //BPIconFontsAwesomeFolderCloseAlt
+                             @"", //BPIconFontsAwesomeFolderOpenAlt
+                             @"", //BPIconFontsAwesomeExpandAlt
+                             @"", //BPIconFontsAwesomeCollapseAlt
+                             @"", //BPIconFontsAwesomeSmile
+                             @"", //BPIconFontsAwesomeFrown
+                             @"", //BPIconFontsAwesomeMeh
+                             @"", //BPIconFontsAwesomeGamepad
+                             @"", //BPIconFontsAwesomeKeyboard
+                             @"", //BPIconFontsAwesomeFlagAlt
+                             @"", //BPIconFontsAwesomeFlagCheckered
+                             @"", //BPIconFontsAwesomeTerminal
+                             @"", //BPIconFontsAwesomeCode
+                             @"", //BPIconFontsAwesomeReplyAll
+                             @"", //BPIconFontsAwesomeMailReplyAll
+                             @"", //BPIconFontsAwesomeStarHalfFull
+                             @"", //BPIconFontsAwesomeStarHalfEmpty
+                             @"", //BPIconFontsAwesomeLocationArrow
+                             @"", //BPIconFontsAwesomeCrop
+                             @"", //BPIconFontsAwesomeCodeFork
+                             @"", //BPIconFontsAwesomeUnlink
+                             @"", //BPIconFontsAwesomeQuestion
+                             @"", //BPIconFontsAwesomeInfo
+                             @"", //BPIconFontsAwesomeExclamation
+                             @"", //BPIconFontsAwesomeSuperscript
+                             @"", //BPIconFontsAwesomeSubscript
+                             @"", //BPIconFontsAwesomeEraser
+                             @"", //BPIconFontsAwesomePuzzlePiece
+                             @"", //BPIconFontsAwesomeMicrophone
+                             @"", //BPIconFontsAwesomeMicrophoneOff
+                             @"", //BPIconFontsAwesomeShield
+                             @"", //BPIconFontsAwesomeCalendarEmpty
+                             @"", //BPIconFontsAwesomeFireExtinguisher
+                             @"", //BPIconFontsAwesomeRocket
+                             @"", //BPIconFontsAwesomeMaxcdn
+                             @"", //BPIconFontsAwesomeChevronSignLeft
+                             @"", //BPIconFontsAwesomeChevronSignRight
+                             @"", //BPIconFontsAwesomeChevronSignUp
+                             @"", //BPIconFontsAwesomeChevronSignDown
+                             @"", //BPIconFontsAwesomeHtml5
+                             @"", //BPIconFontsAwesomeCss3
+                             @"", //BPIconFontsAwesomeAnchor
+                             @"", //BPIconFontsAwesomeUnlockAlt
+                             @"", //BPIconFontsAwesomeBullseye
+                             @"", //BPIconFontsAwesomeEllipsisHorizontal
+                             @"", //BPIconFontsAwesomeEllipsisVertical
+                             @"", //BPIconFontsAwesomeRssSign
+                             @"", //BPIconFontsAwesomePlaySign
+                             @"", //BPIconFontsAwesomeTicket
+                             @"", //BPIconFontsAwesomeMinusSignAlt
+                             @"", //BPIconFontsAwesomeCheckMinus
+                             @"", //BPIconFontsAwesomeLevelUp
+                             @"", //BPIconFontsAwesomeLevelDown
+                             @"", //BPIconFontsAwesomeCheckSign
+                             @"", //BPIconFontsAwesomeEditSign
+                             @"", //BPIconFontsAwesomeExternalLinkSign
+                             @"", //BPIconFontsAwesomeShareSign"
+                             ];
+    }
+    return fontAwesomeIcons;
+}
+
+
++ (NSArray*)entypoIcons
+{
+    static NSArray *entypoIcons;
+    if (nil == entypoIcons) {
+        entypoIcons = @[
+                        @"📞",   //BPIconFontsEntypoPhone
+                        @"📱",   //BPIconFontsEntypoMobile
+                        @"",   //BPIconFontsEntypoMouse
+                        @"",   //BPIconFontsEntypoAddress
+                        @"✉",    //BPIconFontsEntypoMail
+                        @"🔿",   //BPIconFontsEntypoPaperPlane
+                        @"✎",    //BPIconFontsEntypoPencil
+                        @"✒",    //BPIconFontsEntypoFeather
+                        @"📎",   //BPIconFontsEntypoAttach
+                        @"",   //BPIconFontsEntypoInbox
+                        @"",   //BPIconFontsEntypoReply
+                        @"",   //BPIconFontsEntypoReplyAll
+                        @"➦",    //BPIconFontsEntypoForward
+                        @"👤",   //BPIconFontsEntypoUser
+                        @"👥",   //BPIconFontsEntypoUsers
+                        @"",   //BPIconFontsEntypoAddUser
+                        @"",   //BPIconFontsEntypoVcard
+                        @"",   //BPIconFontsEntypoExport
+                        @"",   //BPIconFontsEntypoLocation
+                        @"",   //BPIconFontsEntypoMap
+                        @"",   //BPIconFontsEntypoCompass
+                        @"➢",    //BPIconFontsEntypoDirection
+                        @"🎯",   //BPIconFontsEntypoHairCross
+                        @"",   //BPIconFontsEntypoShare
+                        @"",   //BPIconFontsEntypoShareable
+                        @"♥",    //BPIconFontsEntypoHeart
+                        @"♡",    //BPIconFontsEntypoHeartEmpty
+                        @"★",    //BPIconFontsEntypoStar
+                        @"☆",    //BPIconFontsEntypoStarEmpty
+                        @"👍",   //BPIconFontsEntypoThumbsUp
+                        @"👎",   //BPIconFontsEntypoThumbsDown
+                        @"",   //BPIconFontsEntypoChat
+                        @"",   //BPIconFontsEntypoComment
+                        @"❞",    //BPIconFontsEntypoQuote
+                        @"⌂",    //BPIconFontsEntypoHome
+                        @"",   //BPIconFontsEntypoPopup
+                        @"🔍",   //BPIconFontsEntypoSearch
+                        @"🔦",   //BPIconFontsEntypoFlashlight
+                        @"",   //BPIconFontsEntypoPrint
+                        @"🔔",   //BPIconFontsEntypoBell
+                        @"🔗",   //BPIconFontsEntypoLink
+                        @"⚑",    //BPIconFontsEntypoFlag
+                        @"⚙",    //BPIconFontsEntypoCog
+                        @"⚒",    //BPIconFontsEntypoTools
+                        @"🏆",   //BPIconFontsEntypoTrophy
+                        @"",   //BPIconFontsEntypoTag
+                        @"📷",   //BPIconFontsEntypoCamera
+                        @"📣",   //BPIconFontsEntypoMegaphone
+                        @"☽",    //BPIconFontsEntypoMoon
+                        @"🎨",   //BPIconFontsEntypoPalette
+                        @"🍂",   //BPIconFontsEntypoLeaf
+                        @"♪",    //BPIconFontsEntypoNote
+                        @"♫",    //BPIconFontsEntypoBeamedNote
+                        @"💥",   //BPIconFontsEntypoNew
+                        @"🎓",   //BPIconFontsEntypoGraduationCap
+                        @"📕",   //BPIconFontsEntypoBook
+                        @"📰",   //BPIconFontsEntypoNewspaper
+                        @"👜",   //BPIconFontsEntypoBag
+                        @"✈",    //BPIconFontsEntypoAirplane
+                        @"",   //BPIconFontsEntypoLifebuoy
+                        @"",   //BPIconFontsEntypoEye
+                        @"🕔",   //BPIconFontsEntypoClock
+                        @"🎤",   //BPIconFontsEntypoMic
+                        @"📅",   //BPIconFontsEntypoCalendar
+                        @"⚡",    //BPIconFontsEntypoFlash
+                        @"⛈",   //BPIconFontsEntypoThunderCloud
+                        @"💧",   //BPIconFontsEntypoDroplet
+                        @"💿",   //BPIconFontsEntypoCd
+                        @"💼",   //BPIconFontsEntypoBriefcase
+                        @"💨",   //BPIconFontsEntypoAir
+                        @"⏳",   //BPIconFontsEntypoHourglass
+                        @"🛇",   //BPIconFontsEntypoGauge
+                        @"🎔",   //BPIconFontsEntypoLanguage
+                        @"",   //BPIconFontsEntypoNetwork
+                        @"🔑",   //BPIconFontsEntypoKey
+                        @"🔋",   //BPIconFontsEntypoBattery
+                        @"📾",   //BPIconFontsEntypoBucket
+                        @"",   //BPIconFontsEntypoMagnet
+                        @"📽",   //BPIconFontsEntypoDrive
+                        @"☕",    //BPIconFontsEntypoCup
+                        @"🚀",   //BPIconFontsEntypoRocket
+                        @"",   //BPIconFontsEntypoBrush
+                        @"🛆",   //BPIconFontsEntypoSuitcase
+                        @"🛈",   //BPIconFontsEntypoTrafficCone
+                        @"🌎",   //BPIconFontsEntypoGlobe
+                        @"⌨",    //BPIconFontsEntypoKeyboard
+                        @"",   //BPIconFontsEntypoBrowser
+                        @"",   //BPIconFontsEntypoPublish
+                        @"",   //BPIconFontsEntypoProgress3
+                        @"",   //BPIconFontsEntypoProgress2
+                        @"",   //BPIconFontsEntypoProgress1
+                        @"",   //BPIconFontsEntypoProgress0
+                        @"🔅",   //BPIconFontsEntypoLightDown
+                        @"🔆",   //BPIconFontsEntypoLightUp
+                        @"◑",    //BPIconFontsEntypoAdjust
+                        @"",   //BPIconFontsEntypoCode
+                        @"💻",   //BPIconFontsEntypoMonitor
+                        @"∞",    //BPIconFontsEntypoInfinity
+                        @"💡",   //BPIconFontsEntypoLightBulb
+                        @"💳",   //BPIconFontsEntypoCreditCard
+                        @"📸",   //BPIconFontsEntypoDatabase
+                        @"✇",    //BPIconFontsEntypoVoicemail
+                        @"📋",   //BPIconFontsEntypoClipboard
+                        @"",   //BPIconFontsEntypoCart
+                        @"📦",   //BPIconFontsEntypoBox
+                        @"🎫",   //BPIconFontsEntypoTicket
+                        @"",   //BPIconFontsEntypoRss
+                        @"📶",   //BPIconFontsEntypoSignal
+                        @"📿",   //BPIconFontsEntypoThermometer
+                        @"💦",   //BPIconFontsEntypoWater
+                        @"",   //BPIconFontsEntypoSweden
+                        @"📈",   //BPIconFontsEntypoLineGraph
+                        @"◴",    //BPIconFontsEntypoPieChart
+                        @"📊",   //BPIconFontsEntypoBarGraph
+                        @"🔾",   //BPIconFontsEntypoAreaGraph
+                        @"🔒",   //BPIconFontsEntypoLock
+                        @"🔓",   //BPIconFontsEntypoLockOpen
+                        @"",   //BPIconFontsEntypoLogout
+                        @"",   //BPIconFontsEntypoLogin
+                        @"✓",    //BPIconFontsEntypoCheck
+                        @"❌",   //BPIconFontsEntypoCross
+                        @"⊟",    //BPIconFontsEntypoSquaredMinus
+                        @"⊞",    //BPIconFontsEntypoSquaredPlus
+                        @"❎",   //BPIconFontsEntypoSquaredCross
+                        @"⊖",    //BPIconFontsEntypoCircledMinus
+                        @"⊕",    //BPIconFontsEntypoCircledPlus
+                        @"✖",    //BPIconFontsEntypoCircledCross
+                        @"➖",   //BPIconFontsEntypoMinus
+                        @"➕",   //BPIconFontsEntypoPlus
+                        @"⌫",    //BPIconFontsEntypoErase
+                        @"🚫",   //BPIconFontsEntypoBlock
+                        @"ℹ",    //BPIconFontsEntypoInfo
+                        @"",   //BPIconFontsEntypoCircledInfo
+                        @"❓",   //BPIconFontsEntypoHelp
+                        @"",   //BPIconFontsEntypoCircledHelp
+                        @"⚠",    //BPIconFontsEntypoWarning
+                        @"🔄",   //BPIconFontsEntypoCycle
+                        @"⟳",   //BPIconFontsEntypoCw
+                        @"⟲",   //BPIconFontsEntypoCcw
+                        @"🔀",   //BPIconFontsEntypoShuffle
+                        @"🔙",   //BPIconFontsEntypoBack
+                        @"↳",    //BPIconFontsEntypoLevelDown
+                        @"",   //BPIconFontsEntypoRetweet
+                        @"🔁",   //BPIconFontsEntypoLoop
+                        @"",   //BPIconFontsEntypoBackInTime
+                        @"↰",    //BPIconFontsEntypoLevelUp
+                        @"⇆",    //BPIconFontsEntypoSwitch
+                        @"",   //BPIconFontsEntypoNumberedList
+                        @"",   //BPIconFontsEntypoAddToList
+                        @"⚏",   //BPIconFontsEntypoLayout
+                        @"☰",   //BPIconFontsEntypoList
+                        @"📄",   //BPIconFontsEntypoTextDoc
+                        @"",   //BPIconFontsEntypoTextDocInverted
+                        @"",   //BPIconFontsEntypoDoc
+                        @"",   //BPIconFontsEntypoDocs
+                        @"",   //BPIconFontsEntypoLandscapeDoc
+                        @"🌄",   //BPIconFontsEntypoPicture
+                        @"🎬",   //BPIconFontsEntypoVideo
+                        @"🎵",   //BPIconFontsEntypoMusic
+                        @"📁",   //BPIconFontsEntypoFolder
+                        @"",   //BPIconFontsEntypoArchive
+                        @"",   //BPIconFontsEntypoTrash
+                        @"📤",   //BPIconFontsEntypoUpload
+                        @"📥",   //BPIconFontsEntypoDownload
+                        @"💾",   //BPIconFontsEntypoSave
+                        @"",   //BPIconFontsEntypoInstall
+                        @"☁",    //BPIconFontsEntypoCloud
+                        @"",   //BPIconFontsEntypoUploadCloud
+                        @"🔖",   //BPIconFontsEntypoBookmark
+                        @"📑",   //BPIconFontsEntypoBookmarks
+                        @"📖",   //BPIconFontsEntypoOpenBook
+                        @"▶",    //BPIconFontsEntypoPlay
+                        @"‖",    //BPIconFontsEntypoPaus
+                        @"●",    //BPIconFontsEntypoRecord
+                        @"■",    //BPIconFontsEntypoStop
+                        @"⏩",   //BPIconFontsEntypoFf
+                        @"⏪",   //BPIconFontsEntypoFb
+                        @"⏮",   //BPIconFontsEntypoToStart
+                        @"⏭",   //BPIconFontsEntypoToEnd
+                        @"",   //BPIconFontsEntypoResizeFull
+                        @"",   //BPIconFontsEntypoResizeSmall
+                        @" ",    //BPIconFontsEntypoVolume
+                        @"🔊",   //BPIconFontsEntypoSound
+                        @"🔇",   //BPIconFontsEntypoMute
+                        @"🕨",   //BPIconFontsEntypoFlowCascade
+                        @"🕩",   //BPIconFontsEntypoFlowBranch
+                        @"🕪",   //BPIconFontsEntypoFlowTree
+                        @"🕫",   //BPIconFontsEntypoFlowLine
+                        @"🕬",   //BPIconFontsEntypoFlowParallel
+                        @"",   //BPIconFontsEntypoLeftBold
+                        @"",   //BPIconFontsEntypoDownBold
+                        @"",   //BPIconFontsEntypoUpBold
+                        @"",   //BPIconFontsEntypoRightBold
+                        @"⬅",   //BPIconFontsEntypoLeft
+                        @"⬇",   //BPIconFontsEntypoDown
+                        @"⬆",   //BPIconFontsEntypoUp
+                        @"➡",    //BPIconFontsEntypoRight
+                        @"",   //BPIconFontsEntypoCircledLeft
+                        @"",   //BPIconFontsEntypoCircledDown
+                        @"",   //BPIconFontsEntypoCircledUp
+                        @"",   //BPIconFontsEntypoCircledRight
+                        @"◂",    //BPIconFontsEntypoTriangleLeft
+                        @"▾",    //BPIconFontsEntypoTriangleDown
+                        @"▴",    //BPIconFontsEntypoTriangleUp
+                        @"▸",    //BPIconFontsEntypoTriangleRight
+                        @"",   //BPIconFontsEntypoChevronLeft
+                        @"",   //BPIconFontsEntypoChevronDown
+                        @"",   //BPIconFontsEntypoChevronUp
+                        @"",   //BPIconFontsEntypoChevronRight
+                        @"",   //BPIconFontsEntypoChevronSmallLeft
+                        @"",   //BPIconFontsEntypoChevronSmallDown
+                        @"",   //BPIconFontsEntypoChevronSmallUp
+                        @"",   //BPIconFontsEntypoChevronSmallRight
+                        @"",   //BPIconFontsEntypoChevronThinLeft
+                        @"",   //BPIconFontsEntypoChevronThinDown
+                        @"",   //BPIconFontsEntypoChevronThinUp
+                        @"",   //BPIconFontsEntypoChevronThinRight
+                        @"←",    //BPIconFontsEntypoLeftThin
+                        @"↓",    //BPIconFontsEntypoDownThin
+                        @"↑",    //BPIconFontsEntypoUpThin
+                        @"→",    //BPIconFontsEntypoRightThin
+                        @"",   //BPIconFontsEntypoArrowCombo
+                        @" ",    //BPIconFontsEntypoThreeDots
+                        @" ",    //BPIconFontsEntypoTwoDots
+                        @" ",    //BPIconFontsEntypoDot
+                        @"🕅",   //BPIconFontsEntypoCC
+                        @"🕆",   //BPIconFontsEntypoCCBy
+                        @"🕇",   //BPIconFontsEntypoCCNc
+                        @"🕈",   //BPIconFontsEntypoCCNcEu
+                        @"🕉",   //BPIconFontsEntypoCCNcJp
+                        @"🕊",   //BPIconFontsEntypoCCSa
+                        @"🕋",   //BPIconFontsEntypoCCNd
+                        @"🕌",   //BPIconFontsEntypoCCPd
+                        @"🕍",   //BPIconFontsEntypoCCZero
+                        @"🕎",   //BPIconFontsEntypoCCShare
+                        @"🕏",   //BPIconFontsEntypoCCRemix
+                        @"🗹",   //BPIconFontsEntypoDBLogo
+                        @"🗺",   //BPIconFontsEntypoDBShape@""
+                        ];
+    }
+    return entypoIcons;
+}
+
+
++(NSString*)stringForIconFont:(NSInteger)icon ofSet:(BPIconFontsSet)set
+{
+    NSArray *icons;
+    
+    switch (set) {
+        case BPIconFontsSetAwesomeFont:
+            icons = [self  fontAwesomeIcons];
+            break;
+            
+        case BPIconFontsSetEntypo:
+            icons = [self  entypoIcons];
+            break;
+    }
+    return icons[icon];
+}
+
++(NSString*)stringForIconFontsEntypo:(BPIconFontsEntypo)icon
+{
+    return [self stringForIconFont:icon ofSet:BPIconFontsSetEntypo];
+}
+
+
+
++(NSString*)stringForIconFontsAwesome:(BPIconFontsAwesome)icon
+{
+    
+    return [self stringForIconFont:icon ofSet:BPIconFontsSetAwesomeFont];
+}
+
+@end
